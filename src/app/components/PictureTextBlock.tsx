@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 const PictureTextBlock = () => {
   return (
@@ -27,6 +27,10 @@ const PictureTextBlock = () => {
             service and cost-effective on the finest quality, and elite brand
             fleet. We offer appropriate prices on all Premium cars.
           </p>
+          <div className="flex text-sm flex-row lg:flex-col xl:mt-20 mt-4 gap-14 underline text-black underline-offset-7 lg:text-2xl font-medium w-full items-center justify-center lg:items-start">
+            <Link href="/qoute">Get a Quote</Link>
+            <Link href="/booknow">Book Now</Link>
+          </div>
         </div>
       </div>
     </div>

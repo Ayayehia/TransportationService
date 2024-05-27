@@ -2,6 +2,7 @@ import HeroSection from "./components/HeroSection";
 import MobileNav from "./components/MobileNav";
 import NavBar from "./components/NavBar";
 import PictureTextBlock from "./components/PictureTextBlock";
+import Service from "./components/Service";
 export default function Home() {
   return (
     <main>
@@ -13,6 +14,7 @@ export default function Home() {
         <MobileNav />
       </div>
       <PictureTextBlock />
+      <Service />
     </main>
   );
 }
