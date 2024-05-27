@@ -14,7 +14,7 @@ const HeroSection = () => {
           Transpotation <br className="hidden lg:block" />
           Services
         </h2>
-        <div className="flex flex-row lg:flex-col lg:min-w-[940px] xl:mt-20 mt-4 gap-14 underline text-white underline-offset-4 lg:text-2xl font-medium">
+        <div className="flex text-sm flex-row lg:flex-col lg:min-w-[940px] xl:mt-20 mt-4 gap-14 underline text-white underline-offset-4 lg:text-2xl font-medium">
           <Link href="/qoute">Get a Quote</Link>
           <Link href="/booknow">Book Now</Link>
         </div>
