@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const PictureTextBlock = () => {
   return (
-    <div>
+    <>
       <div className="lg:flex lg:flex-row w-full items-center justify-center flex flex-col text-center lg:text-start mt-6 lg:mt-0 ">
         <div className="lg:max-w-[27%]">
           <h3 className="text-[#778892] lg:text-xl  mb-5">
@@ -33,7 +33,7 @@ const PictureTextBlock = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
