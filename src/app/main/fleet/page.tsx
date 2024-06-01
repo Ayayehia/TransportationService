@@ -2,6 +2,7 @@ import Card from "@/app/components/products/Card";
 const page = () => {
   const cars = [
     {
+      id: 1,
       type: "Premium SUV",
       model: "Cadillac Escalade ESV",
       passengers: "6",
@@ -9,6 +10,7 @@ const page = () => {
       image: "/car_cadillac_escalade-328x194.jpg.png",
     },
     {
+      id: 2,
       type: "Executive SUV",
       model: "Mercedes GLS",
       passengers: "6",
@@ -16,6 +18,7 @@ const page = () => {
       image: "/car_mersedes_gls.png.png",
     },
     {
+      id: 3,
       type: "Premium Sedan",
       model: "Cadillac CT6 or Similar",
       passengers: "1-3",
@@ -23,6 +26,7 @@ const page = () => {
       image: "/car_cadillac_ct6-328x158.jpg.png",
     },
     {
+      id: 4,
       type: "Executive Sedan",
       model: "BMW X1",
       passengers: "1-3",
@@ -30,6 +34,7 @@ const page = () => {
       image: "/bmw_x1-328x198.jpg.png",
     },
     {
+      id: 5,
       type: "Limousine Van",
       model: "Mercedes Sprinter or Similar",
       passengers: "11-14",
@@ -37,6 +42,7 @@ const page = () => {
       image: "/car_mercedes_sprinter-328x202.jpg.png",
     },
     {
+      id: 6,
       type: "Executive Van",
       model: "Ford Transit Van",
       passengers: "7-14",
@@ -44,6 +50,7 @@ const page = () => {
       image: "/car_cadillac_escalade-328x194.jpg.png",
     },
     {
+      id: 7,
       type: "Specialty Limousine",
       model: "Cadillac Limousine or Similar",
       passengers: "Up to 15",
@@ -51,6 +58,7 @@ const page = () => {
       image: "/SPECIALTY_LIMO-328x164.jpg.png",
     },
     {
+      id: 8,
       type: "Stretch Limo",
       model: "MKT Limousine or Similar",
       passengers: "6-10",
@@ -58,6 +66,7 @@ const page = () => {
       image: "/flt1-328x181.jpg.png",
     },
     {
+      id: 9,
       type: "Minibus",
       model: "Freightliner Minibus",
       passengers: "24-38",
@@ -65,6 +74,7 @@ const page = () => {
       image: "/freightliner.png",
     },
     {
+      id: 10,
       type: "Party Bus",
       model: "Party Bus",
       passengers: "30",
@@ -72,6 +82,7 @@ const page = () => {
       image: "/party_bus.jpg.png",
     },
     {
+      id: 11,
       type: "Executive Motor Coach",
       model: "Motorcoach",
       passengers: "57",
@@ -93,6 +104,7 @@ const page = () => {
         {cars.map((items) => {
           return (
             <Card
+              key={items.id}
               type={items.type}
               model={items.model}
               passengers={items.passengers}

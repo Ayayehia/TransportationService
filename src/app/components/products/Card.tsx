@@ -7,12 +7,14 @@ const Card = ({
   passengers,
   suitcases,
   image,
+  key,
 }: {
   type: string;
   model: string;
   passengers: string;
   suitcases: string;
   image: string;
+  key: number;
 }) => {
   return (
     // <div className="relative group">
@@ -41,7 +43,10 @@ const Card = ({
     //     </div>
     //   </div>
     // </div>
-    <div className="rounded-lg border-[#E6EBEE] border-2 uppercase text-center ">
+    <div
+      className="rounded-lg border-[#E6EBEE] border-2 uppercase text-center"
+      key={key}
+    >
       <div className="flex flex-col justify-center items-center w-full pt-9">
         <p className="text-[#B4C6D0] text-lg">{type}</p>
         <h2 className="text-lg text-[#778892] font-semibold ">{model}</h2>
