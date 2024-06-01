@@ -47,7 +47,7 @@ const Card = ({
       className="rounded-lg border-[#E6EBEE] border-2 uppercase text-center"
       key={key}
     >
-      <div className="flex flex-col justify-center items-center w-full pt-9">
+      <div className="flex flex-col justify-center items-center w-full h-fit pt-9">
         <p className="text-[#B4C6D0] text-lg">{type}</p>
         <h2 className="text-lg text-[#778892] font-semibold ">{model}</h2>
         <div className="border-b-[#E7C13C] border-b-2 w-1/4 my-2" />

@@ -92,7 +92,7 @@ const page = () => {
   ];
 
   return (
-    <div className="xl:px-[200px] p-4 lg:p-0 lg:px-[100px] ">
+    <div className="xl:px-[200px] p-4 lg:p-0 lg:px-[70px] ">
       <h3 className="lg:pt-12 pt-6 text-[#CDD5DA] uppercase">
         Main<span className="pl-1">/</span>
         <span className="text-[#778892] pl-1"> Fleet</span>
