@@ -1,9 +1,9 @@
-import HeroSection from "./components/HeroSection";
-import MobileNav from "./components/MobileNav";
-import NavBar from "./components/NavBar";
-import PictureTextBlock from "./components/PictureTextBlock";
-import Service from "./components/Service";
-import PictureTextBlockTwo from "./components/PictureTextBlockTwo";
+import HeroSection from "./components/Home/LandingPage/HeroSection";
+import MobileNav from "./components/layout/Header/MobileNav";
+import NavBar from "./components/layout/Header/NavBar";
+import PictureTextBlock from "./components/Home/LandingPage/PictureTextBlock";
+import Service from "./components/Home/LandingPage/Service";
+import PictureTextBlockTwo from "./components/Home/LandingPage/PictureTextBlockTwo";
 export default function Home() {
   return (
     <main>
@@ -21,7 +21,7 @@ export default function Home() {
         altText="White Toyota car"
         title="PROFESSIONAL CHAUFFEUR"
         paragraph=" Renting a chauffeur driven car can give your journey an ultimate
-        upgrade, whether you’re traveling for business or pleasure."
+        upgrade, whether you're traveling for business or pleasure."
       />
       <PictureTextBlockTwo
         image="/premium.png"

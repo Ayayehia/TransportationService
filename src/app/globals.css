@@ -1,4 +1,8 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-  
+@tailwind components;
+@tailwind utilities;
+@import url(https://db.onlinewebfonts.com/c/5f324140f01f8d6788626d514b70b9cd?family=Casanova+Scotia);
+h2,
+h3 {
+  font-family: "Casanova Scotia";
+}

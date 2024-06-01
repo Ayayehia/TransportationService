@@ -1,5 +1,3 @@
-import MaxwidthWrapper from "./MaxwidthWrapper";
-
 const NavBar = () => {
   return (
     <nav className="absolute top-0 mt-6 w-full ">
