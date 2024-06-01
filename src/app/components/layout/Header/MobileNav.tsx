@@ -19,19 +19,19 @@ const MobileNav = () => {
               </li>
 
               <li>
-                <Link href="/fleet">Fleet</Link>
+                <Link href="/main/fleet">Fleet</Link>
               </li>
 
               <li>
-                <Link href="/quote">Quote </Link>
+                <Link href="/main/quote">Quote </Link>
               </li>
 
               <li>
-                <Link href="/reviews">Reviews </Link>
+                <Link href="/main/reviews">Reviews </Link>
               </li>
 
               <li>
-                <Link href="/contactus">Contact US </Link>
+                <Link href="/main/contactus">Contact US </Link>
               </li>
             </ul>
             <div className="flex flex-col mt-8">
