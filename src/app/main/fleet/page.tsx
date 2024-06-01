@@ -103,14 +103,16 @@ const page = () => {
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-9  gap-y-5 gap-x-3">
         {cars.map((items) => {
           return (
-            <Card
-              key={items.id}
-              type={items.type}
-              model={items.model}
-              passengers={items.passengers}
-              suitcases={items.suitcases}
-              image={items.image}
-            />
+            <div key={items.id}>
+              <Card
+                key={items.id}
+                type={items.type}
+                model={items.model}
+                passengers={items.passengers}
+                suitcases={items.suitcases}
+                image={items.image}
+              />
+            </div>
           );
         })}
       </div>
