@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { motion } from "framer-motion";
 const Card = ({
   type,
   model,
@@ -43,7 +45,7 @@ const Card = ({
       <div className="flex flex-col justify-center items-center w-full pt-9">
         <p className="text-[#B4C6D0] text-lg">{type}</p>
         <h2 className="text-lg text-[#778892] font-semibold ">{model}</h2>
-        <div className="border-b-[#E7C13C] border-b-4  " />
+        <div className="border-b-[#E7C13C] border-b-2 w-1/4 my-2" />
         <img src={image} className="w-fit h-[155px]" />
         <p className="text-lg">
           Passengers:
@@ -52,9 +54,13 @@ const Card = ({
         <p className="text-lg pb-9">
           Suitcases:<span className="font-medium text-2xl">{suitcases}</span>
         </p>
-        <button className="py-8 w-full bg-[#E6EBEE] text-[#778892] font-medium text-sm uppercase">
+        <motion.button
+          whileHover={{ scale: 1.05, y: -5 }}
+          transition={{ duration: 0.3 }}
+          className="py-8 w-full bg-[#E6EBEE] text-[#778892] font-medium text-sm uppercase hover:bg-[#E7C13C] hover:rounded-md"
+        >
           <Link href="/reserve">Reserve Now</Link>
-        </button>
+        </motion.button>
       </div>
     </div>
   );

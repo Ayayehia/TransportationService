@@ -82,7 +82,10 @@ const page = () => {
 
   return (
     <div className="xl:px-[200px] p-4 lg:p-0 lg:px-[100px] ">
-      <div className="lg:pt-12 pt-6">Home/Fleet</div>
+      <h3 className="lg:pt-12 pt-6 text-[#CDD5DA] uppercase">
+        Main<span className="pl-1">/</span>
+        <span className="text-[#778892] pl-1"> Fleet</span>
+      </h3>
       <div className="flex w-full items-center justify-center">
         <h3 className="text-4xl uppercase lg:pt-[132px] pt-8">Fleet</h3>
       </div>
