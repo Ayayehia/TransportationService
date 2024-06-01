@@ -51,7 +51,7 @@ const Card = ({
         <p className="text-[#B4C6D0] text-lg">{type}</p>
         <h2 className="text-lg text-[#778892] font-semibold ">{model}</h2>
         <div className="border-b-[#E7C13C] border-b-2 w-1/4 my-2" />
-        <img src={image} className="w-fit h-[155px]" />
+        <img src={image} className="w-fit h-[155px]" alt="car image" />
         <p className="text-lg">
           Passengers:
           <span className="font-medium text-2xl">{passengers}</span>
