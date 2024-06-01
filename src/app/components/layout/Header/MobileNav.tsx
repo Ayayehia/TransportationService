@@ -10,8 +10,8 @@ const MobileNav = () => {
     <div className="absolute top-0 right-0 p-3">
       <Menu onClick={() => SetShowmenu((prev) => !prev)} color="white" />
       {Showmenu ? (
-        <div className="bg-[#121111de] fixed inset-0 flex justify-between px-3 py-5 transition-transform">
-          <div className="flex flex-col text-white justify-center pl-4">
+        <div className="bg-[#121111de] fixed inset-0 flex justify-between px-3 py-5 transition-transform z-[10000px] ">
+          <div className="flex flex-col text-white justify-center pl-4 ">
             <img src="/Logo.png" className="mb-8" />
             <ul className="flex flex-col gap-9">
               <li>
