@@ -3,7 +3,7 @@ import Form from "@/app/components/form/review/Form";
 import Header from "@/app/components/form/review/Header";
 import { useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [Showform, setShowform] = useState<boolean>(false);
   const [imageid, Setimageid] = useState<any[]>([]);
   const [Reviewform, Setreviewform] = useState<any[]>([]);
@@ -32,4 +32,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
