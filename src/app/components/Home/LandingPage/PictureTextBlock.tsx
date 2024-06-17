@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 const PictureTextBlock = () => {
-  const RefElementOne = useRef<HTMLElement>(null);
+  const RefElementOne = useRef<any>(null);
   const { scrollYProgress } = useScroll({
     target: RefElementOne,
     offset: ["0 1", "1.33 1"],
