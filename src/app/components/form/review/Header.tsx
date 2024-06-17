@@ -1,7 +1,16 @@
 "use client";
 import { motion } from "framer-motion";
-
-const Header = ({ setterform }: { setterform: (value: boolean) => void }) => {
+import Review from "./Review";
+import { ReviewComponent } from "../../Reviewcomponent";
+const Header = ({
+  setterform,
+  Reviewform,
+  avatarimage,
+}: {
+  setterform: (value: boolean) => void;
+  Reviewform: Array<any>;
+  Setreviewform?: React.Dispatch<React.SetStateAction<Array<any>>>;
+}) => {
   return (
     <div className="flex flex-col justify-center items-center w-full gap-5 lg:gap-8">
       <h2 className="text-2xl">Ratings & Reviews</h2>
@@ -13,8 +22,13 @@ const Header = ({ setterform }: { setterform: (value: boolean) => void }) => {
       >
         Write a review
       </motion.button>
+      {Reviewform.length > 0 ? (
+        <ReviewComponent Reviewform={Reviewform} avatarimage={avatarimage} />
+      ) : null}
     </div>
   );
 };
-
+{
+  /* <Review Reviewform={Reviewform} /> */
+}
 export default Header;

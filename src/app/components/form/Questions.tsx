@@ -28,7 +28,7 @@ const Questions = () => {
         try {
           const docref = await addDoc(collection(db, "questions"), values);
           setSubmitting(true);
-          resetForm();
+          // resetForm();
         } catch (e) {
           console.error("Error adding document: ", e);
         }

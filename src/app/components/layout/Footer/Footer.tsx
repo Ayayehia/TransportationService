@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#3A3B42]">
+    <footer className="bg-[#3A3B42] mt-auto">
       <div className="py-20 px-auto flex lg:flex-row flex-col justify-center items-center gap-[160px] text-white">
         <div className="flex flex-col lg:gap-5 gap-3">
           <img src="/Logo.png" alt="logo" />
@@ -20,7 +20,7 @@ const Footer = () => {
               <Link href="/quote">Quote</Link>
             </li>
           </div>
-          <div className="fle flex-col E7C13C">
+          <div className="flex flex-col text-[#E7C13C]">
             <li>
               <Link href="/reviews">Reviews</Link>
             </li>
@@ -28,7 +28,7 @@ const Footer = () => {
               <Link href="/contactus">Contact Us</Link>
             </li>
           </div>
-          <div className="fle flex-col E7C13C">
+          <div className="fle flex-col text-[#E7C13C]">
             <li>Copyright ©</li>
             <li>Terms of service</li>
             <li>Privacy policy</li>
