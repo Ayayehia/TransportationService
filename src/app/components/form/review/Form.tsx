@@ -3,11 +3,9 @@ import { cn } from "@/lib/utils";
 import { StarIcon } from "@heroicons/react/20/solid";
 import "@uploadcare/react-uploader/core.css";
 import { FileUploaderRegular } from "@uploadcare/react-uploader";
-import { useState } from "react";
 import { z } from "zod";
 import { Formik, Field, Form } from "formik";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+
 const ReviewForm = ({
   setterform,
   imageid,
@@ -19,23 +17,23 @@ const ReviewForm = ({
 }: {
   setterform: (value: boolean) => void;
   Reviewform: Array<any>;
-  Setreviewform?: React.Dispatch<React.SetStateAction<Array<any>>>;
+  Setreviewform: React.Dispatch<React.SetStateAction<Array<any>>>;
   imageid: Array<any>;
-  Setimageid?: React.Dispatch<React.SetStateAction<Array<any>>>;
+  Setimageid: React.Dispatch<React.SetStateAction<Array<any>>>;
   avatarimage: Array<any>;
   SetAvatarimage: React.Dispatch<React.SetStateAction<Array<any>>>;
 }) => {
   console.log(Reviewform[0]?.avatar, "Reviewform info avatar");
   console.log(Reviewform, "Reviewform info");
 
-  const handleChangeEvent = (items) => {
+  const handleChangeEvent = (items: any) => {
     Setimageid([
-      ...items.allEntries.filter((file) => file.status === "success"),
+      ...items.allEntries.filter((file: any) => file.status === "success"),
     ]);
   };
-  const handleChangeEventavatar = (items) => {
+  const handleChangeEventavatar = (items: any) => {
     SetAvatarimage([
-      ...items.allEntries.filter((file) => file.status === "success"),
+      ...items.allEntries.filter((file: any) => file.status === "success"),
     ]);
   };
   const schema = z.object({
@@ -44,10 +42,10 @@ const ReviewForm = ({
     username: z.string().nonempty("UserName is Required"),
     email: z.string().email("Invalid email address"),
   });
-  const validate = (values): any => {
+  const validate = (values: any) => {
     try {
       schema.parse(values);
-    } catch (error) {
+    } catch (error: any) {
       return error.formErrors.fieldErrors;
     }
     return {};

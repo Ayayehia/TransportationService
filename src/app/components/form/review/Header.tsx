@@ -1,11 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
-import Review from "./Review";
 import { ReviewComponent } from "../../Reviewcomponent";
 const Header = ({
   setterform,
   Reviewform,
-  avatarimage,
 }: {
   setterform: (value: boolean) => void;
   Reviewform: Array<any>;
@@ -23,12 +21,10 @@ const Header = ({
         Write a review
       </motion.button>
       {Reviewform.length > 0 ? (
-        <ReviewComponent Reviewform={Reviewform} avatarimage={avatarimage} />
+        <ReviewComponent Reviewform={Reviewform} />
       ) : null}
     </div>
   );
 };
-{
-  /* <Review Reviewform={Reviewform} /> */
-}
+
 export default Header;

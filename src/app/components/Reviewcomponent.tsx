@@ -7,13 +7,13 @@ import { Card } from "@/app/components/ui/card";
 
 const UPLOAD_URL = "https://ucarecdn.com";
 
-export function ReviewComponent({ Reviewform }) {
+export function ReviewComponent({ Reviewform }: { Reviewform: Array<any> }) {
   const [review, imageReview, imageAvatar] = Reviewform;
 
   return (
     <Card className="w-full max-w-4xl p-6 md:flex md:space-x-8 bg-[#f5f5f5]">
       <div className="flex items-start gap-4">
-        {imageAvatar?.map((item) => (
+        {imageAvatar?.map((item: any) => (
           <Avatar className="w-12 h-12 border">
             <AvatarImage
               alt="Avatar"
@@ -50,7 +50,7 @@ export function ReviewComponent({ Reviewform }) {
         <h2 className="text-xl font-semibold"> {review?.title}</h2>
         <p className="text-gray-500 dark:text-gray-400">{review?.review}</p>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-          {imageReview?.map((item) => (
+          {imageReview?.map((item: any) => (
             <img
               alt="Product Image"
               className="w-full rounded-lg object-cover"
@@ -69,7 +69,7 @@ export function ReviewComponent({ Reviewform }) {
   );
 }
 
-function StarIcon(props) {
+function StarIcon(props: any) {
   return (
     <svg
       {...props}
