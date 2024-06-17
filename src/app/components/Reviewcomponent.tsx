@@ -14,7 +14,7 @@ export function ReviewComponent({ Reviewform }: { Reviewform: Array<any> }) {
     <Card className="w-full max-w-4xl p-6 md:flex md:space-x-8 bg-[#f5f5f5]">
       <div className="flex items-start gap-4">
         {imageAvatar?.map((item: any) => (
-          <Avatar className="w-12 h-12 border">
+          <Avatar className="w-12 h-12 border" key={item.uuid}>
             <AvatarImage
               alt="Avatar"
               className="w-full rounded-lg object-cover"
@@ -52,6 +52,7 @@ export function ReviewComponent({ Reviewform }: { Reviewform: Array<any> }) {
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           {imageReview?.map((item: any) => (
             <img
+              key={item.uuid}
               alt="Product Image"
               className="w-full rounded-lg object-cover"
               height={180}

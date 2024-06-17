@@ -11,10 +11,10 @@ const schema = z.object({
   phone: z.string().regex(/^\d+$/, "Phone number must be a number"),
   describtion: z.string().nonempty("Description is required"),
 });
-const validate = (values): any => {
+const validate = (values: any) => {
   try {
     schema.parse(values);
-  } catch (error) {
+  } catch (error: any) {
     return error.formErrors.fieldErrors;
   }
   return {};
